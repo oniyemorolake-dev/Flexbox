@@ -2,49 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Flexbox lab</h1>
-    <p>All boxes have a height 50px.</p>
-    <p>You may select any colour you like for the boxes and their borders</p>
-    <h1>Two equally sized columns</h1>
-    <p>The space between the columns, and between the columns and the outer box, is 10px</p>
+    <header>
+        <h1>Flexbox lab</h1>
+        <p>All boxes have a height 50px.</p>
+        <p>You may select any color you like for the boxes and their borders.</p>
+    </header>
 
-    <div class="container1">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        </div>
+    <main>
+        <section aria-labelledby="two-columns-heading">
+            <h2 id="two-columns-heading">Two equally sized columns</h2>
+            <p>The space between the columns, and between the columns and the outer box, is 10px.</p>
 
-        <h1>Three equally sized columns</h1>
-         <p>The space between the columns, and between the columns and the outer box, is 15px</p>
-         <div class="container2">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
+            <div class="container columns-equal-2">
+                <div class="panel box">1</div>
+                <div class="panel box">2</div>
             </div>
-         <h1>Three unqual columns</h1>
-            <p>The first column is exactly double the width of the other two</p>
-            <p>The space between columns, and between the columns and the outer box, is 12px</p>
-            <p>Each inner box has a 2px border</p>
-            <div class="container3">
-                <div class="box1">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
+        </section>
+
+        <section aria-labelledby="three-columns-heading">
+            <h2 id="three-columns-heading">Three equally sized columns</h2>
+            <p>The space between the columns, and between the columns and the outer box, is 15px.</p>
+
+            <div class="container columns-equal-3">
+                <div class="panel box">1</div>
+                <div class="panel box">2</div>
+                <div class="panel box">3</div>
             </div>
-            <h1>Four equally sized columns and a footer</h1>
-            <p>The space between columns, and between the columns and the outer box, is 12px</p>
-            <p>Each inner box has a 2px border</p>
-            
-            <div class="container4">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="footer">Footer</div>
+        </section>
+
+        <section aria-labelledby="three-unequal-heading">
+            <h2 id="three-unequal-heading">Three unequal columns</h2>
+            <p>The first column is exactly double the width of the other two.</p>
+            <p>The space between columns, and between the columns and the outer box, is 12px.</p>
+            <p>Each inner box has a 2px border.</p>
+
+            <div class="container columns-unequal-3">
+                <div class="panel box box-double bordered">1</div>
+                <div class="panel box bordered">2</div>
+                <div class="panel box bordered">3</div>
             </div>
+        </section>
+
+        <section aria-labelledby="four-columns-footer-heading">
+            <h2 id="four-columns-footer-heading">Four equally sized columns and a footer</h2>
+            <p>The space between columns, and between the columns and the outer box, is 12px.</p>
+            <p>Each inner box has a 2px border.</p>
+
+            <div class="container columns-with-footer">
+                <div class="panel box bordered">1</div>
+                <div class="panel box bordered">2</div>
+                <div class="panel box bordered">3</div>
+                <div class="panel box bordered">4</div>
+                <footer class="panel section-footer bordered">Footer</footer>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>

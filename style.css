@@ -1,0 +1,60 @@
+h1 {
+    color: plum;
+}
+
+p {
+    color: purple;
+}
+
+.container {
+    display: flex;
+    background-color: purple;
+    margin-bottom: 20px;
+}
+
+.columns-equal-2 {
+    padding: 10px;
+    gap: 10px;
+}
+
+.columns-equal-3 {
+    padding: 15px;
+    gap: 15px;
+}
+
+.columns-unequal-3 {
+    padding: 12px;
+    gap: 12px;
+    border: 2px solid black;
+}
+
+.columns-with-footer {
+    padding: 12px;
+    gap: 12px;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.panel {
+    background-color: grey;
+    height: 50px;
+}
+
+.box {
+    flex: 1;
+}
+
+.box-double {
+    flex: 2;
+}
+
+.bordered {
+    border: 2px solid black;
+}
+
+.section-footer {
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
+}
